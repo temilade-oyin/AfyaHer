@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#2c1600",
+                    "tertiary-container": "#9b6a35",
+                    "surface-variant": "#e6e2db",
+                    "on-surface": "#1c1c18",
+                    "secondary-fixed": "#d5e8d2",
+                    "on-tertiary-container": "#fffbff",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#566756",
+                    "surface-tint": "#974730",
+                    "on-primary-fixed-variant": "#79301b",
+                    "outline": "#88726d",
+                    "on-background": "#1c1c18",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "background": "#fdf9f2",
+                    "primary": "#94442e",
+                    "surface-container": "#f1ede6",
+                    "secondary-fixed-dim": "#b9ccb6",
+                    "primary-container": "#b35c44",
+                    "secondary-container": "#d2e5cf",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#ffdcbd",
+                    "on-secondary-fixed": "#101f12",
+                    "inverse-primary": "#ffb5a1",
+                    "outline-variant": "#dbc1ba",
+                    "surface-container-high": "#ece8e1",
+                    "secondary": "#526351",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#7f521f",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f7f3ec",
+                    "surface-bright": "#fdf9f2",
+                    "primary-fixed-dim": "#ffb5a1",
+                    "surface": "#fdf9f2",
+                    "on-primary-container": "#fffcff",
+                    "inverse-surface": "#31302c",
+                    "primary-fixed": "#ffdbd1",
+                    "tertiary-fixed-dim": "#f7bb7e",
+                    "surface-container-highest": "#e6e2db",
+                    "on-primary-fixed": "#3b0900",
+                    "surface-dim": "#dddad3",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#663d0b",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#55433e",
+                    "on-secondary-fixed-variant": "#3a4b3b",
+                    "inverse-on-surface": "#f4f0e9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Manrope", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      body { font-family: 'Manrope', sans-serif; }
+      .font-newsreader { font-family: 'Newsreader', serif; }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fdf9f2]/80 backdrop-blur-md dark:bg-[#1c1c18]/80 no-border tonal-shift bg-[#f7f3ec] flat no-shadows">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold font-newsreader text-[#94442e] dark:text-[#b35c44]">AfyaHer</div>
+<div class="hidden md:flex items-center gap-8 font-newsreader font-medium text-lg tracking-tight">
+<a class="text-[#94442e] border-b-2 border-[#94442e] pb-1" href="#">Home</a>
+<a class="text-[#55433e] hover:text-[#94442e] transition-colors" href="#">About Us</a>
+<a class="text-[#55433e] hover:text-[#94442e] transition-colors" href="#">Community</a>
+<a class="text-[#55433e] hover:text-[#94442e] transition-colors" href="#">Get Involved</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label font-bold scale-95 transition-transform duration-200 hover:bg-primary-container">
+                Join Us
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section: Editorial Asymmetry -->
+<section class="px-6 md:px-12 py-16 md:py-32 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-24">
+<div class="flex-1 space-y-8 order-2 md:order-1">
+<h1 class="text-5xl md:text-7xl font-newsreader leading-[1.1] text-on-surface">
+                    Prioritize Your <span class="italic text-primary">Health</span>, Own Your Voice, Choose Yourself.
+                </h1>
+<p class="text-xl md:text-2xl font-body text-on-surface-variant max-w-xl leading-relaxed">
+                    A nurturing sanctuary designed for the modern African woman to thrive through shared wisdom and professional care.
+                </p>
+<div class="pt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-label font-bold text-lg inline-flex items-center gap-3 shadow-lg shadow-on-surface-variant/10 hover:scale-105 transition-transform">
+                        Start Your Journey
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex-1 order-1 md:order-2 relative">
+<div class="aspect-[4/5] w-full rounded-[3rem] overflow-hidden bg-surface-container-highest">
+<img alt="Group of diverse African women laughing together" class="w-full h-full object-cover" data-alt="a group of diverse, smiling African women sitting together in a sun-drenched garden, wearing warm earthy tones, cinematic lighting, soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxSDXNdLQDnZMWOJIS6HXkNGSd4R2swlp448WySSear9m9sN8ryB_dP_I3Gnj02-2ttD-PFxJF8EwtmWbh4iA6k4sDgeYNIgALcByvk0qA27ezYvPXYqTvQL9PSr1GznIbOwwiUoii1mSngv5ARfuSWs-VNFeP50Ho_RTG5ODaAk0SJ3-nfr6rWwHbwe9LDVkRYA0LFtTwywwRFvy3k_X7rfCN2jl22i6z8hkeXdfrck0Vt1lHuefCpfLltRPT-BFgkKPCWuKiDAU"/>
+</div>
+<!-- Asymmetric Decorative Element -->
+<div class="absolute -bottom-6 -left-6 w-32 h-32 md:w-48 md:h-48 bg-secondary-container rounded-full -z-10 opacity-50 blur-2xl"></div>
+</div>
+</section>
+<!-- Introduction: Breathing Room Section -->
+<section class="bg-surface-container-low py-24 md:py-32">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<span class="uppercase tracking-widest text-primary font-bold text-sm mb-6 block">Our Essence</span>
+<h2 class="text-4xl md:text-5xl font-newsreader mb-8 text-on-surface">Health for Her, <span class="italic">Grace for All.</span></h2>
+<div class="space-y-6 text-lg md:text-xl text-on-surface-variant leading-relaxed">
+<p>AfyaHer is more than a platform; it is a digital sanctuary. We believe that true health begins with being heard, seen, and validated.</p>
+<p>By curating spaces that blend traditional wisdom with contemporary healthcare, we empower women to navigate their wellness journeys with dignity and confidence.</p>
+</div>
+</div>
+</section>
+<!-- Core Focus Areas: Bento Grid -->
+<section class="py-24 md:py-32 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
+<div class="md:col-span-8 bg-surface-container-highest p-10 md:p-16 rounded-[2.5rem] flex flex-col justify-between min-h-[400px]">
+<div class="max-w-md">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="female">female</span>
+<h3 class="text-3xl font-newsreader mb-4">Women's Reproductive Health</h3>
+<p class="text-on-surface-variant text-lg">Accessible, non-judgmental resources for every stage of your cycle and life, from adolescence through menopause.</p>
+</div>
+<div class="pt-8">
+<a class="text-primary font-bold inline-flex items-center gap-2 hover:underline" href="#">
+                            Learn more <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-4 bg-tertiary-container text-on-tertiary-container p-10 rounded-[2.5rem] flex flex-col items-center text-center justify-center">
+<span class="material-symbols-outlined text-5xl mb-6" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<h3 class="text-2xl font-newsreader mb-4">Emotional Empowerment</h3>
+<p class="opacity-90">Safe digital spaces for processing growth and finding resilience.</p>
+</div>
+<div class="md:col-span-4 bg-secondary-container p-10 rounded-[2.5rem] flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-on-secondary-container mb-6" data-icon="forum">forum</span>
+<h3 class="text-2xl font-newsreader mb-4">Community Conversations</h3>
+</div>
+<p class="text-on-secondary-container/80">Guided dialogues that turn private concerns into shared strength.</p>
+</div>
+<div class="md:col-span-8 bg-surface-container p-10 md:p-16 rounded-[2.5rem] relative overflow-hidden group">
+<div class="relative z-10 max-w-md">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="campaign">campaign</span>
+<h3 class="text-3xl font-newsreader mb-4">Advocacy &amp; Awareness</h3>
+<p class="text-on-surface-variant text-lg">Breaking silences and influencing policy to ensure healthcare systems serve women equitably.</p>
+</div>
+<!-- Decorative Circle -->
+<div class="absolute -right-20 -bottom-20 w-64 h-64 bg-primary/10 rounded-full group-hover:scale-110 transition-transform duration-700"></div>
+</div>
+</div>
+</section>
+<!-- Testimonials: Community Insight Card -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-5xl mx-auto px-6">
+<div class="bg-surface-container-lowest rounded-[3rem] p-12 md:p-20 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary to-tertiary-container"></div>
+<span class="material-symbols-outlined text-6xl text-primary/20 absolute top-12 left-12" data-icon="format_quote">format_quote</span>
+<div class="relative z-10">
+<blockquote class="text-2xl md:text-4xl font-newsreader leading-snug text-on-surface mb-12">
+                            "I leave feeling clearer, calmer, and validated. AfyaHer has given me the language to speak about my health without fear."
+                        </blockquote>
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-full overflow-hidden">
+<img alt="Profile of a woman" class="w-full h-full object-cover" data-alt="portrait of a confident African woman with natural hair, looking warmly at the camera, soft natural studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA6917MhIOO1asv--QguUDm9tYK3fIBChLPMiSNeuQZJWPYlOr1-ahVfqwo0B3paAcMpfOD0-4DG23xO1iqoIW5uvyNQj95QyrsB4oPESiyv2euJXHA0KREO5ztD9p1nIQrTnJbzBiip9Ps_2oa7n3v3ParJ5mIbLggArGfR3Lhq3H8Hi3BM0Ni5FQYew37uL5W6BUQTqGjBA4sVOks6yhx0TrRA6BaSSMUG0vSV_RzNLDUQSp0dF1owgFr4zDcjEGPBvKVpu4Ptw"/>
+</div>
+<div>
+<p class="font-bold text-on-surface">Zainab O.</p>
+<p class="text-on-surface-variant text-sm">Community Member since 2022</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call-to-Action -->
+<section class="py-32 px-6 text-center">
+<div class="max-w-3xl mx-auto space-y-10">
+<h2 class="text-4xl md:text-6xl font-newsreader text-on-surface">Ready to join the gathering?</h2>
+<p class="text-xl text-on-surface-variant">Our next community conversation starts this Friday. We have a seat saved for you.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="w-full sm:w-auto bg-primary text-on-primary px-10 py-5 rounded-full font-label font-bold text-lg shadow-xl shadow-primary/20 hover:scale-105 transition-transform">
+                        Join Our Community
+                    </button>
+<button class="w-full sm:w-auto text-primary px-10 py-5 rounded-full font-label font-bold text-lg hover:bg-surface-container transition-colors">
+                        View Next Gathering
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[2rem] bg-[#f7f3ec] dark:bg-[#2d2d2a] tonal-shift padding-xl flat no-shadows">
+<div class="flex flex-col md:flex-row justify-between items-start px-12 py-16 gap-8 w-full">
+<div class="space-y-4 max-w-sm">
+<div class="text-xl font-bold font-newsreader text-[#94442e]">AfyaHer</div>
+<p class="font-['Manrope'] text-sm leading-relaxed text-[#55433e]">Creating spaces of health, grace, and community for African women to find their voice and own their wellbeing.</p>
+</div>
+<div class="grid grid-cols-2 gap-12">
+<div class="flex flex-col gap-4">
+<span class="font-bold text-[#94442e] uppercase text-xs tracking-widest">Resources</span>
+<a class="font-['Manrope'] text-sm text-[#55433e] hover:underline hover:text-[#94442e]" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-sm text-[#55433e] hover:underline hover:text-[#94442e]" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-bold text-[#94442e] uppercase text-xs tracking-widest">Help</span>
+<a class="font-['Manrope'] text-sm text-[#55433e] hover:underline hover:text-[#94442e]" href="#">FAQ</a>
+<a class="font-['Manrope'] text-sm text-[#55433e] hover:underline hover:text-[#94442e]" href="#">Support</a>
+</div>
+</div>
+</div>
+<div class="px-12 pb-12">
+<div class="pt-8 opacity-80 font-['Manrope'] text-sm text-[#55433e]">
+                © 2024 AfyaHer. Health for Her, Grace for All.
+            </div>
+</div>
+</footer>
+</body></html>
