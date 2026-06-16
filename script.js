@@ -25,35 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Email signup
-  const notifyBtn = document.getElementById('notifyBtn');
-  const emailInput = document.getElementById('emailInput');
-
-  if (notifyBtn && emailInput) {
-    notifyBtn.addEventListener('click', function (e) {
-      e.preventDefault();
-      const email = emailInput.value.trim();
-      if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        const original = notifyBtn.textContent;
-        notifyBtn.textContent = '✓ You\'re on the list!';
-        notifyBtn.style.background = '#F4C5CC';
-        notifyBtn.style.color = '#561269';
-        setTimeout(() => {
-          notifyBtn.textContent = original;
-          notifyBtn.style.background = '';
-          notifyBtn.style.color = '';
-          emailInput.value = '';
-        }, 3500);
-      } else {
-        emailInput.style.borderColor = '#d46a75';
-        setTimeout(() => emailInput.style.borderColor = '', 1500);
-      }
-    });
-    emailInput.addEventListener('keypress', e => {
-      if (e.key === 'Enter') notifyBtn.click();
-    });
-  }
-
   // Scroll reveal
   const reveals = document.querySelectorAll('.section, .blog-card, .connect-card, .transform-col');
   const observer = new IntersectionObserver((entries) => {
